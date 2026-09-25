@@ -19,7 +19,7 @@ This applies to every CoSchedule repo that doesn't have its own `CONTRIBUTING.md
 ## Pull requests
 
 - The PR title is a conventional commit: `type(scope): summary`, for example `fix(api): handle expired session tokens`. The title check enforces the repo's allowed scopes.
-- PRs are squash-merged, so the PR title becomes the commit on the default branch.
+- PRs merge with a merge commit titled with the PR title, so every commit on the branch stays in history. Write commit messages worth keeping, and tidy up fixup commits before asking for review.
 - Fill in the PR template, including the testing, risk and AI assistance sections.
 
 ## Review
