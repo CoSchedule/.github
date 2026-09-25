@@ -30,7 +30,7 @@ This applies to every CoSchedule repo that doesn't have its own `CONTRIBUTING.md
 
 ## How we build with AI
 
-- **Approved tools:** the AI coding agents the company provides. Other AI tools need Infrastructure team approval before they touch company code.
+- **Approved tools:** the AI coding agents the company provides. Other AI tools need approval from an engineering admin before they touch company code.
 - **Never put in a prompt:** customer personal data, production data exports, secrets, API keys or credentials.
 - **You own what you merge.** Every PR has a human author and a human reviewer, whether an agent wrote the code or not.
 - **Verify, don't trust.** Agents run the `check` script and show its output. UI changes include a screenshot.

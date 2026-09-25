@@ -12,5 +12,5 @@ Include what you found, how to reproduce it, and what an attacker could do with 
 ## For CoSchedule engineers
 
 - Never commit secrets, `.env` files or keys. Credentials come from CI secrets, AWS Secrets Manager or OIDC.
-- If a secret is committed or leaked, rotate it right away, then tell the Infrastructure team. Removing it from git history doesn't make it safe again.
+- If a secret is committed or leaked, rotate it right away, then tell an engineering admin. Removing it from git history doesn't make it safe again.
 - Dependabot security updates are grouped weekly per folder and merge automatically once CI passes.
