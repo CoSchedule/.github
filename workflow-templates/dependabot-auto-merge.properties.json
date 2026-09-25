@@ -1,0 +1,6 @@
+{
+  "name": "Dependabot auto-merge",
+  "description": "Approves and auto-merges non-major Dependabot updates.",
+  "iconName": "octicon dependabot",
+  "categories": ["Automation"]
+}

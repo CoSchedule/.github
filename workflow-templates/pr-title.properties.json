@@ -1,0 +1,6 @@
+{
+  "name": "PR title",
+  "description": "Checks the PR title against the repo's .commitlintrc.json.",
+  "iconName": "octicon git-pull-request",
+  "categories": ["Automation"]
+}

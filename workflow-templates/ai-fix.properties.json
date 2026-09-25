@@ -1,0 +1,6 @@
+{
+  "name": "AI fix",
+  "description": "Add the ai-fix label to a PR with failing checks and the AI agent opens a fix PR. Works on Dependabot major upgrades.",
+  "iconName": "octicon tools",
+  "categories": ["Automation"]
+}

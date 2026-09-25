@@ -1,0 +1,21 @@
+name: AI assistant
+
+on:
+  issue_comment:
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  ai-assistant:
+    uses: CoSchedule/platform/.github/workflows/ai-assistant.yml@v1
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+      id-token: write
+      actions: read
+    secrets:
+      ai-api-key: ${{ secrets.AI_API_KEY }}

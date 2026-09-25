@@ -1,0 +1,14 @@
+name: Dependabot auto-merge
+
+on: pull_request_target
+
+jobs:
+  dependabot-auto-merge:
+    uses: CoSchedule/platform/.github/workflows/dependabot-auto-merge.yml@v1
+    permissions:
+      contents: read
+      pull-requests: read
+    with:
+      app-client-id: ${{ vars.COSCHEDULE_APP_CLIENT_ID }}
+    secrets:
+      app-private-key: ${{ secrets.COSCHEDULE_APP_PRIVATE_KEY }}

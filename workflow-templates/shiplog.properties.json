@@ -1,0 +1,6 @@
+{
+  "name": "Shiplog",
+  "description": "Posts merged PRs to the shiplog Slack channel.",
+  "iconName": "octicon megaphone",
+  "categories": ["Automation"]
+}

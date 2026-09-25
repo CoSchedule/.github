@@ -1,0 +1,6 @@
+{
+  "name": "Label required reviews",
+  "description": "Requires extra approvals on PRs with certain labels.",
+  "iconName": "octicon shield-check",
+  "categories": ["Automation"]
+}

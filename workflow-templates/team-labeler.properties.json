@@ -1,0 +1,6 @@
+{
+  "name": "Team labeler",
+  "description": "Labels PRs with the author's team from .github/teams.yml.",
+  "iconName": "octicon tag",
+  "categories": ["Automation"]
+}

@@ -1,0 +1,16 @@
+name: AI fix
+
+on:
+  pull_request:
+    types: [labeled]
+
+jobs:
+  ai-fix:
+    uses: CoSchedule/platform/.github/workflows/ai-fix.yml@v1
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: read
+      id-token: write
+    secrets:
+      ai-api-key: ${{ secrets.AI_API_KEY }}

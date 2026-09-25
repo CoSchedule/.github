@@ -1,0 +1,13 @@
+name: Ready for review
+
+on:
+  pull_request:
+    types: [opened, ready_for_review]
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  ready-for-review:
+    uses: CoSchedule/platform/.github/workflows/ready-for-review.yml@v1
+    secrets:
+      SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}

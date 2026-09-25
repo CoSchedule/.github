@@ -1,0 +1,12 @@
+name: Shiplog
+
+on:
+  pull_request:
+    branches: [$default-branch]
+    types: [closed]
+
+jobs:
+  shiplog:
+    uses: CoSchedule/platform/.github/workflows/shiplog.yml@v1
+    secrets:
+      SLACK_SHIPLOG_WEBHOOK_URL: ${{ secrets.SLACK_SHIPLOG_WEBHOOK_URL }}

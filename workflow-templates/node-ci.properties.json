@@ -1,0 +1,6 @@
+{
+  "name": "Node CI",
+  "description": "Installs dependencies and runs the repo's check script. The required status check is named \"ci / check\" in every repo.",
+  "iconName": "octicon check-circle",
+  "categories": ["Continuous integration"]
+}

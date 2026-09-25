@@ -1,0 +1,6 @@
+{
+  "name": "AI assistant",
+  "description": "Lets people with write access start a comment with /ai to ask the AI agent for help on a PR or issue.",
+  "iconName": "octicon comment-discussion",
+  "categories": ["Automation"]
+}

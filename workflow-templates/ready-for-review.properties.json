@@ -1,0 +1,6 @@
+{
+  "name": "Ready for review",
+  "description": "Posts to Slack when a PR is ready for review, approved, or has changes requested.",
+  "iconName": "octicon megaphone",
+  "categories": ["Automation"]
+}

@@ -1,0 +1,19 @@
+name: Label required reviews
+
+# pull_request_target runs with the base branch's code and the org's secrets, so the required
+# status also reports on Dependabot PRs. It never checks out or runs the PR's code.
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, labeled, unlabeled]
+  pull_request_review:
+    types: [submitted, dismissed]
+
+jobs:
+  label-required-reviews:
+    uses: CoSchedule/platform/.github/workflows/label-required-reviews.yml@v1
+    permissions:
+      contents: read
+    with:
+      app-client-id: ${{ vars.COSCHEDULE_APP_CLIENT_ID }}
+    secrets:
+      app-private-key: ${{ secrets.COSCHEDULE_APP_PRIVATE_KEY }}

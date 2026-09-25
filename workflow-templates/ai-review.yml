@@ -1,0 +1,15 @@
+name: AI review
+
+on:
+  pull_request:
+    types: [opened, ready_for_review]
+
+jobs:
+  ai-review:
+    uses: CoSchedule/platform/.github/workflows/ai-review.yml@v1
+    permissions:
+      contents: read
+      pull-requests: write
+      id-token: write
+    secrets:
+      ai-api-key: ${{ secrets.AI_API_KEY }}

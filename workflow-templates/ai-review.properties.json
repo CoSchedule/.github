@@ -1,0 +1,6 @@
+{
+  "name": "AI review",
+  "description": "First-pass AI code review when a PR opens or is marked ready.",
+  "iconName": "octicon git-pull-request",
+  "categories": ["Automation"]
+}
