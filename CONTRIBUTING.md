@@ -6,6 +6,7 @@ This applies to every CoSchedule repo that doesn't have its own `CONTRIBUTING.md
 
 - Read the repo's `AGENTS.md`. It has the commands, conventions and gotchas for that repo.
 - Run `scripts/setup-dev.sh` to install dependencies the same way CI does.
+- Private `@coschedule` packages install with your GitHub CLI login. Run `gh auth refresh -h github.com -s read:packages` once, then add `export GITHUB_TOKEN="$(gh auth token 2>/dev/null)"` to your shell profile. If you ever need to run `gh auth login` or `gh auth refresh` again, prefix it with `env -u GITHUB_TOKEN`.
 - Bigger changes start from an issue with acceptance criteria. Decisions others will need to follow go in `docs/decisions/`.
 
 ## Making a change
