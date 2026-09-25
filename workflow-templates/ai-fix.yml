@@ -12,5 +12,3 @@ jobs:
       pull-requests: write
       actions: read
       id-token: write
-    secrets:
-      ai-api-key: ${{ secrets.AI_API_KEY }}
