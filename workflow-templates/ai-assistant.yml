@@ -17,5 +17,3 @@ jobs:
       issues: write
       id-token: write
       actions: read
-    secrets:
-      ai-api-key: ${{ secrets.AI_API_KEY }}
