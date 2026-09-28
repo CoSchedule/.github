@@ -2,7 +2,6 @@ name: Shiplog
 
 on:
   pull_request:
-    branches: [$default-branch]
     types: [closed]
 
 jobs:
