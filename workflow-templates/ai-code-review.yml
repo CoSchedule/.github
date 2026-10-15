@@ -1,0 +1,18 @@
+name: AI code review
+
+on:
+  pull_request:
+    types: [opened, ready_for_review, reopened, synchronize]
+  pull_request_review:
+    types: [submitted]
+  issue_comment:
+    types: [created]
+
+jobs:
+  ai-code-review:
+    uses: CoSchedule/platform/.github/workflows/ai-code-review.yml@v1
+    permissions:
+      contents: read
+      pull-requests: write
+      statuses: write
+      id-token: write
