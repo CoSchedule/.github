@@ -1,0 +1,8 @@
+{
+  "name": "AI code review",
+  "description": "Reviews PRs like a person and gates merging with the AI Code Review status. Private repos only.",
+  "iconName": "octicon git-pull-request",
+  "categories": [
+    "Automation"
+  ]
+}
